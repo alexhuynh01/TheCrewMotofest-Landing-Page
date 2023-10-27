@@ -9,7 +9,6 @@ html {
 #header {
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: center;
     height: 75px;
     top: 0px;
     left: 0px;
