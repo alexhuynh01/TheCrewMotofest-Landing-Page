@@ -157,26 +157,42 @@ html {
 
 #content{
     background-image: url(/assets/img/content/background-content.jpeg);
+    background-position: 50% 0px, 90% 0px ;
+    background-size: 100%, contain ;
     height: 1000px;
+    padding: 199.797px 0px 83.25px;
 }
-#content video{
+#content{
+    display: flex;
+}
+#content .video-content{
+    /* position: relative; */
     width: 920px;
-    height: 527px;
-    align-items: flex-end;
-    font-size: 18px;
-    line-height: 30px;
-    box-shadow:  0px 9px 18px 0px;
-    color: rgb(236, 72, 72);
-    border-style:solid ;
-    border-width: 8px ;
+    height: 525px;
 }
+
+#content .video-content video{
+    /* position: absolute; */
+    margin-left: 180px;
+    margin-top: 120px;
+    box-shadow: #0000 0px 9px 18px 0px;
+    color: rgb(236, 72, 72);
+    border-style: solid ;
+    border-width: 8px;
+    
+    
+}
+#content .about{
+    color: #292929;
+    padding:  60px;
+}
+
 #content .about h2 {
     width: 389px;
     height: 253px;
     text-align: center;
     font-size: 80px;
-    color: #292929;
-    margin-left: 90px;
+    
 }
 #content .about p {
     font-family: "DIN Pro";
@@ -186,8 +202,7 @@ html {
     line-height: 30px;
     font-size: 18px;
     text-align: center;
-    color: #292929;
-    margin-left: 90px;
+   
 }
 #content .about h3 {
     font-style: italic;
@@ -199,8 +214,5 @@ html {
     text-align: center;
     text-transform: uppercase;
     color: #292929;
-    margin-left: 90px   ;
-}
-#container {
-    display: flex;
+    
 }
