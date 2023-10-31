@@ -1,3 +1,4 @@
+@import url(https://db.onlinewebfonts.com/c/f68c6bad0ff9b9941cd1c86965eabd25?family=DINCond-Black);
 * {
     padding: 0;
     margin: 0;
@@ -7,23 +8,25 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
 }
   
 ol, ul {
     list-style: none;
 }
 html {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: "DINCond-Black";
 }
 #header {
     background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
     display: flex;
     height: 75px;
     top: 0px;
     left: 0px;
     right: 0px;
     position: fixed;
+    font-size: 18px;
+    letter-spacing: -0.45px;
     z-index: 1;
 }
 
@@ -32,6 +35,7 @@ html {
     margin-right: 15px;
     margin-left: 20px;
 }
+/* nav */
 #nav li{
     display: block;
     position: relative;
@@ -39,19 +43,33 @@ html {
 #nav > li {
     float: left;
 }
-
-#nav, .subnav{
-    list-style-type: none;
-    font-weight: bold;
-    font-style: italic;
+#nav > li:hover > a {
+    color: black;
+    background-color: white;
 }
+
+
 #nav > li > a {
     color: white;
     text-transform: uppercase;
-    font-weight: bold ;
     font-style: italic;
 }
+#nav .ti-angle-down {
+    color: yellow;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 75px;
+    padding: 0 15px;
+    display: inline-block;
+}
+/* end  nav */
 
+/* Subnav */
+#nav, .subnav{
+    list-style-type: none;
+    font-style: italic;
+}
 #nav .subnav {
     display: none;
     min-width: 220px;
@@ -71,16 +89,6 @@ html {
     color: black;
     background-color: #fff428;
 }
-#nav .ti-angle-down {
-    color: yellow;
-}
-#nav li a {
-
-    text-decoration: none;
-    line-height: 75px;
-    padding: 0 15px;
-    display: inline-block;
-}
 #nav li:hover .subnav {
     display: block;
 }
@@ -91,23 +99,39 @@ html {
     color: black;
     background-color: #fff428;
 }
+/* end subnav */
 
-#nav > li:hover > a {
+
+
+/* buy header */
+#buy li{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    display: block;
+    position: relative;
+}
+#buy > li {
+    top:  0;
+    position: fixed;
+    right: 0;
+}
+#buy > li:hover > a {
     color: black;
     background-color: white;
 }
-/* .buy {
+
+#buy > li > a {
     color: black;
+    background-color: #fff428;
+    text-transform: uppercase;
+    font-style: italic;
+}
+#buy li a {
     text-decoration: none;
     line-height: 75px;
-    padding: 0 15px;
+    padding: 0 60px;
     display: inline-block;
-    background-color: #fff428;
-
-} */
-#header .buy {
-    float: right;
 }
+/* end buy header */
 
 /* vd silder */
 #background video {
