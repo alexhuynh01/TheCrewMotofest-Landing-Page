@@ -80,7 +80,7 @@ html {
     position: absolute;
     list-style-type: none;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: -1;
 }
 #nav .subnav a {
@@ -109,9 +109,10 @@ html {
 
 /* buy header */
 #buy li{
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     display: block;
     position: relative;
+    flex-direction:column ;
 }
 #buy > li {
     top:  0;
@@ -159,8 +160,8 @@ html {
     background-image: url(/assets/img/content/background-content.jpeg);
     background-position: 50% 0px, 90% 0px ;
     background-size: 100%, contain ;
-    height: 1000px;
-    padding: 199.797px 0px 83.25px;
+    min-height: 1000px;
+    /* padding: 199.797px 0px 83.25px; */
 }
 #content{
     display: flex;
@@ -175,7 +176,7 @@ html {
     /* position: absolute; */
     margin-left: 180px;
     margin-top: 120px;
-    box-shadow: #0000 0px 9px 18px 0px;
+    box-shadow:  0px 9px 18px 0px;
     color: rgb(236, 72, 72);
     border-style: solid ;
     border-width: 8px;
