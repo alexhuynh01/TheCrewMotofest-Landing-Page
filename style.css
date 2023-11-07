@@ -161,7 +161,7 @@ html {
     /* background-color: white; */
     background-position: 50% 0px, 90% 0px ;
     background-size: 100%, contain ;
-    min-height: 1000px;
+    min-height: 100vh;
     /* padding: 199.797px 0px 83.25px; */
 }
 #content{
@@ -242,4 +242,8 @@ html {
     letter-spacing: -0.65px;
     line-height: 32px;
     
+}
+#footer{
+    height: 100vh;
+    background-color: #292929;
 }
