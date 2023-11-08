@@ -1,6 +1,7 @@
 @import url(https://db.onlinewebfonts.com/c/f68c6bad0ff9b9941cd1c86965eabd25?family=DINCond-Black);
 
 @import url(https://db.onlinewebfonts.com/c/15a478cc0eb1d84f4077a2a9d28df0b2?family=DIN+Pro);
+
 * {
     padding: 0;
     margin: 0;
@@ -150,6 +151,38 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+#background h2 {
+    font-family: "DINCond-Black";
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 50px;
+    letter-spacing: -1.25;
+    font-style: italic;
+    line-height: 50px;
+
+    font-weight:200;
+}
+#background button {
+    font-family: "DINCond-Black";
+    text-align: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 50px;
+    letter-spacing: -1.25;
+    font-style: italic;
+    line-height: 50px;
+    width: 400px;
+    font-weight:200;
 }
 /* end */
 
