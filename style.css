@@ -2,6 +2,15 @@
 
 @import url(https://db.onlinewebfonts.com/c/15a478cc0eb1d84f4077a2a9d28df0b2?family=DIN+Pro);
 
+@font-face {
+    font-family: 'DIN-CondItalic';
+    src: url(/assets/font/DIN-CondItalic.otf) format('opentype');
+    /* font-family: "DINCond-Black";
+    src: url(/assets/font/DINCond-Black.otf)
+    format('opentype'); */
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -148,15 +157,15 @@ html {
 #background img {
     width: 30%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 #background h2 {
-    font-family: "DINCond-Black";
+    font-family: 'DIN-CondItalic';
     text-align: center;
     position: absolute;
-    top: 70%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
@@ -169,13 +178,15 @@ html {
     font-weight:200;
 }
 #background a span{
-    border-width: 15px;
+    border-color:  #ff1c38;
+    border-width: 10px;
     border-radius: 7px;
     border-style: solid;
-    font-family: "DINCond-Black";
+    box-shadow: inset 0 0 0 2px rgb(186, 54, 59);
+    font-family: 'DINCond-Black';
     text-align: center;
     position: absolute;
-    top: 85%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
@@ -185,7 +196,7 @@ html {
     font-size: 26px;
     letter-spacing: -0.65;
     font-style: italic;
-    line-height: 30px;
+    line-height: 45px;
     padding: 14px 19px 12px;
     font-weight:200;
 }
@@ -193,7 +204,7 @@ html {
     text-decoration: none;
     color:#ffffff;
     background-color: #ffb52d;
-
+    border-color:#ffb52d ;
 }
 /* end */
 
