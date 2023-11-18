@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>  
-    <link rel="icon" type="image/png" href="/assets/img/logo/tab-logo.png">
+    <link data-react-helmet="true" rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="https://static-dm.ubisoft.com/motorfest/prod/favicon.ico"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="/assets/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assets/font/themify-icons/themify-icons.css">
     
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
     <title>The Crew™ Motofest | Ubisoft</title>
@@ -15,11 +15,11 @@
     <div id="main">
         <div id="header">
             <a href="" id="logo">
-                <img src="/assets/img/LOGO_TC_MOTORFEST_horizontal.avif">
+                <img src="assets/img/LOGO_TC_MOTORFEST_horizontal.avif">
             </a>
             <ul id="nav">
                 <li><a href="#content">Season 1</a></li>
-                <li><a href="">New & Video</a></li>
+                <li><a href="#footer">New & Video</a></li>
                 <li><a href="">Collection Import</a></li>
                 <li><a href="">Vehicles</a></li>
                 <li><a href="">Streamer Mode</a></li>
@@ -41,9 +41,17 @@
         <div class="video-silder">
             <div id="background">
                 <video autoplay muted loop>
-                    <source src="/assets/video/TCM_HEADER.mp4" type="video/mp4">
+                    <source src="assets/video/TCM_HEADER.mp4" type="video/mp4">
                 </video>
-                    <img src="/assets/img/LOGO_TC_MOTORFEST-01.avif" >
+                    <img src="assets/img/LOGO_TC_MOTORFEST-01.avif">
+                <h2>Avaliable-Now</h2>
+                    <a href="https://store.ubisoft.com/sea/the-crew-motorfest/63bc67dbd406ab22f1174305.html?lang=en_SG&_gl=1*1wi2guw*_ga*MTUwNjk2MzI3OS4xNjk5NTM3ODQ5*_ga_C4N5020N2R*MTY5OTUzNzg0OC4xLjEuMTY5OTUzOTQ2Ni41Ni4wLjA.">
+                        <span>
+                            Buy Now
+                        </span>
+                        
+                    </a>
+                    
             </div>
         </div>
         <div id="content">
@@ -53,28 +61,61 @@
             <p>
                 The Crew™ Motorfest features more vehicles than ever before in the franchise, including new brands, new car categories, and dozens of new models. Drive the most exclusive hypercars, such as the Lamborghini Revuelto, discover two generations of Toyota Supra, go electric with the Lotus Evija... and much more!
             </p>
-        </div>
-        <div class="video-content">
-            <video autoplay loop src="/assets/video/LAMBORGHINI_SIAN_16-9_NO_RATINGS_7sec.mp4" width="100%" type="video/mp4">
-            </video>
-
-            <!-- <video id="video2" src="/assets/video/B_ROLL_REVUELTO_16-9_H264_EMEA_7sec.mp4" width="100%" type="video/mp4">
-            </video> -->
-
-            <!-- <video id="video3" src="/assets/video/COBRA_SHELBY_16-9_NO_RATINGS_7sec.mp4" width="100%" type="video/mp4">
-            </video>
-
-            <video id="video4" src="/assets/video/FORD_BRONCO_16-9_NO_RATINGS_7sec.mp4" width="100%" type="video/mp4">
-            </video>
-             -->
+            <div id="on-click">
+                <span>
+                    <a href="">
+                         <i class="ti-arrow-right"></i>
+                        Vehicles
+                    </a>
+                </span>
+                <br>
+                <span>
+                    <a href="">
+                        <i class="ti-arrow-right"></i>
+                        Colletion import
+                   </a>
+                </span>
             </div>
+            
+
+            </div>
+           
+            <div class="video-content">
+
+                <video id="myVideo" width="900px" autoplay onended="nextVideo()">
+                    <source src="assets/video/B_ROLL_REVUELTO_16-9_H264_EMEA_7sec.mp4" type="video/mp4">
+                  </video>
+                <!-- <video id="video2" width="90%">
+                    <source src="/assets/video/LAMBORGHINI_URUS_16-9_H264_7sec.mp4" type="video/mp4">
+                </video> -->
+
+
+                <!-- <video id="video2" src="/assets/video/B_ROLL_REVUELTO_16-9_H264_EMEA_7sec.mp4" width="100%" type="video/mp4">
+                </video> -->
+
+                <!-- <video id="video3" src="/assets/video/COBRA_SHELBY_16-9_NO_RATINGS_7sec.mp4" width="100%" type="video/mp4">
+                </video>
+
+                <video id="video4" src="/assets/video/FORD_BRONCO_16-9_NO_RATINGS_7sec.mp4" width="100%" type="video/mp4">
+                </video>
+                -->
+            </div>
+           
+
+
+
         </div>
+
+
+
+
         <div id="footer">
             
         </div>
     </div>
-    <script src="/assets/js/main.js"></script>
-
+    
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
