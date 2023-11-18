@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'DIN-CondItalic';
-    src: url(/assets/font/DIN-CondItalic.otf) format('opentype');
+    src: url(assets/font/DIN-CondItalic.otf) format('opentype');
     /* font-family: "DINCond-Black";
     src: url(/assets/font/DINCond-Black.otf)
     format('opentype'); */
@@ -86,7 +86,7 @@ html {
 }
 #nav .subnav {
     display: none;
-    min-width: 220px;
+    width: 220px;
     position: absolute;
     list-style-type: none;
     background-color: white;
@@ -213,9 +213,9 @@ html {
 
 #content{
     display: flex;
-    background-image: url(/assets/img/content/background-content.jpeg);
+    background-image: url(assets/img/content/background-content.jpeg);
     /* background-color: white; */
-
+    
     background-size: 100%, contain ;
     min-height: 100vh;
     /* padding: 199.797px 0px 83.25px; */
