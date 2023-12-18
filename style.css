@@ -69,8 +69,10 @@ html {
     text-transform: uppercase;
     font-style: italic;
 }
-#nav .ti-angle-down {
+#nav i.bxs-chevron-down {
     color: yellow;
+    padding: 0 3px;
+    font-weight: bolder;
 }
 #nav li a {
     text-decoration: none;
@@ -199,10 +201,9 @@ html {
     color: #ffffff;
     width: 200px;
     font-size: 26px;
-    letter-spacing: -0.65;
     font-style: italic;
     line-height: 45px;
-    padding: 14px 19px 12px;
+    padding: 14px 19px;
     font-weight:200;
 }
 #background span:hover{
@@ -227,19 +228,19 @@ html {
 
 #content .video-content{
     position: relative;
-    width: 50%;
-    max-width: 900px;
+    width: 70%;
+    max-width: 1000px;
     height: 100%;      
+    padding: 150px 50px;
 }
 
 #content .video-content video{
     /* position: absolute; */
     object-fit: contain;
-    margin-top: 150px;
+    
     box-shadow:  0px 9px 18px 0px;
     color: #ff1c38;
-    border-style: solid ;
-    border-width: 8px;
+    border: 8px solid;
     width: 100%;
     height: 100%;
 }
@@ -250,10 +251,12 @@ html {
 }
 #content .about{
     color: #292929;
-    padding:  150px;
+    padding: 100px 50px;
+    width: 50%;
 }
 
 #content .about h2 {
+    margin: 0 auto;
     width: 389px;
     height: 253px;
     text-align: center;
@@ -262,6 +265,7 @@ html {
 }
 #content .about p {
     font-family: "DIN Pro";
+    margin: 0 auto;
     width: 389px; 
     height: 210px; 
     overflow: hidden;
@@ -271,6 +275,7 @@ html {
    
 }
 #content .about h3 {
+    margin: 0 auto;
     font-style: italic;
     width: 389px; 
     height: 100px; 
