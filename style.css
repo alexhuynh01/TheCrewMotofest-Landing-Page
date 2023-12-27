@@ -125,12 +125,13 @@ html {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
     display: block;
     position: relative;
-    flex-direction: column ;
+    
 }
 #buy > li {
     top:  0;
     position: fixed;
     right: 0;
+    
 }
 #buy > li:hover > a {
     color: #292929;
@@ -142,6 +143,7 @@ html {
     background-color: #fff428;
     text-transform: uppercase;
     font-style: italic;
+    
 }
 #buy li a {
     text-decoration: none;
@@ -181,7 +183,7 @@ html {
     letter-spacing: -1.25;
     font-style: italic;
     line-height: 50px;
-    font-weight:200;
+    font-weight : 200;
 }
 #background a span{
     border-color:  #ff1c38;
@@ -203,7 +205,8 @@ html {
     font-style: italic;
     line-height: 45px;
     padding: 14px 19px;
-    font-weight:200;
+    font-weight : 200;
+    transition: background-color 0.3s linear;
 }
 #background span:hover{
     text-decoration: none;
