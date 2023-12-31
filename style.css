@@ -125,12 +125,13 @@ html {
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
     display: block;
     position: relative;
-    flex-direction: column ;
+    
 }
 #buy > li {
     top:  0;
     position: fixed;
     right: 0;
+    
 }
 #buy > li:hover > a {
     color: #292929;
@@ -142,6 +143,7 @@ html {
     background-color: #fff428;
     text-transform: uppercase;
     font-style: italic;
+    
 }
 #buy li a {
     text-decoration: none;
@@ -181,8 +183,7 @@ html {
     letter-spacing: -1.25;
     font-style: italic;
     line-height: 50px;
-
-    font-weight:200;
+    font-weight : 500;
 }
 #background a span{
     border-color:  #ff1c38;
@@ -204,7 +205,8 @@ html {
     font-style: italic;
     line-height: 45px;
     padding: 14px 19px;
-    font-weight:200;
+    font-weight : 200;
+    transition: background-color 0.3s linear;
 }
 #background span:hover{
     text-decoration: none;
@@ -215,34 +217,36 @@ html {
 /* end */
 
 
+.container{
+    background-image: url(assets/img/content/background-content.jpeg);
+    max-width: 100%;
+    
+}
 
 
 #content{
     display: flex;
-    background-image: url(assets/img/content/background-content.jpeg);
+    
     /* background-color: white; */
-    width: 100%;
+    width: 95%;
     background-size: 100%, contain ;
     min-height: 100vh;
+    margin: 0 auto;
 }
-
 #content .video-content{
-    position: relative;
-    width: 70%;
-    max-width: 1000px;
-    height: 100%;      
-    padding: 150px 50px;
+    width: 50%;   
+    margin: 100px 0;
 }
 
-#content .video-content video{
+#content .video-content #myVideo{
     /* position: absolute; */
     object-fit: contain;
-    
     box-shadow:  0px 9px 18px 0px;
     color: #ff1c38;
     border: 8px solid;
+    
     width: 100%;
-    height: 100%;
+    max-height: 100%;
 }
 #content .video-content h3{
     text-transform: uppercase;
@@ -251,7 +255,7 @@ html {
 }
 #content .about{
     color: #292929;
-    padding: 100px 50px;
+    padding: 100px 0px;
     width: 50%;
 }
 
@@ -314,4 +318,47 @@ html {
 #footer{
     height: 100vh;
     background-color: #292929;
+}
+
+/* Tablet and mobile */
+/* @media only screen and (max-width: 63.9375em) {
+    #content{
+        flex-direction: column;
+    }
+  
+} */
+@media only screen and (max-width: 1640px) {
+    #content{
+        flex-direction: column;
+    }
+  
+}
+
+/* Mobile: with < 740px */
+/* @media only screen and (max-width: 46.1875em) {
+    #content .about{
+        width: 100%;
+        
+    }
+    #content .video-content{
+        width: 100%;
+
+    }
+} */
+/* Tablet: with >= 740px and with < 1024px */
+@media only screen and (max-width: 1640px) {
+    #content .about{
+        width: 100%;
+        
+    }
+    #content .video-content{
+        width: 100%;
+
+    }
+    #nav, .subnav{
+        display: none;
+    }
+    #background a span{
+        display: none;
+    }
 }
