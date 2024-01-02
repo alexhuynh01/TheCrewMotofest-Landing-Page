@@ -226,7 +226,6 @@ html {
 
 #content{
     display: flex;
-    
     /* background-color: white; */
     width: 95%;
     background-size: 100%, contain ;
@@ -235,7 +234,7 @@ html {
 }
 #content .video-content{
     width: 50%;   
-    margin: 100px 0;
+    margin: 170px 0;
 }
 
 #content .video-content #myVideo{
@@ -255,8 +254,9 @@ html {
 }
 #content .about{
     color: #292929;
-    padding: 100px 0px;
+    margin-top: 170px;
     width: 50%;
+    padding-right: 190px;
 }
 
 #content .about h2 {
@@ -347,7 +347,7 @@ html {
 @media only screen and (max-width: 102.5000em) {
     #content .about{
         width: 100%;
-        
+        padding-right: 0px;
     }
     #content .video-content{
         width: 100%;
