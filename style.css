@@ -32,6 +32,13 @@ ol, ul {
 html {
     font-family: "DINCond-Black";
 }
+
+
+.mb-25{
+    margin-bottom: 25px !important ;
+}
+
+
 #header {
     --height-menu: 75px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -247,7 +254,6 @@ html {
     box-shadow:  0px 9px 18px 0px;
     color: #ff1c38;
     border: 8px solid;
-
     width: 95%;
     max-height: 100%;
 }
@@ -348,29 +354,29 @@ footer{
     max-width: 400px;
     background-color: #292929;
     padding: 40px 20px 40px 40px;
-   
+   min-width: 310px;
 }
 
 .panel__link{
-   
     display: flex;
     flex-direction: column;
    
-    margin-top: 45px;
+    margin-top: 30px;
 }
 .panel__button{
-    letter-spacing: 1px;
-    font-size: 24px;
-    font-family: "DINCond-Black";
-    padding: 8px 0;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-family: "Lato";
+    font-weight: bold;
+    margin: 10px 0;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
 .panel__legal{
-    font-family: "DIN Pro";
+    font-family: "DIN Pro", sans-serif;
     font-size: 16px;
-    padding: 4px 0;
+    padding: 2px 0;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -385,17 +391,79 @@ footer{
 
 .panel-2{
    width: 80%;
-   background-color: #1d1e21;
+   background-color: rgb(16, 17, 20);
    padding: 40px 350px 0px 60px;
+   display: flex;
+   flex-direction: column;
 }
 .panel__brand{
-    
     margin: 0 0 40px;
 }
 .panel__brand img{
    
     width: 180px;
     height: 50px;
+}
+.panel-c1{
+
+}
+.panel-c1__logo{
+    font-family: "DIN Pro";
+    margin: 10px 0 20px;
+    color: white;
+    text-transform: uppercase;
+}
+.panel-c1__link{
+    display: flex;
+    flex-direction: column;
+   
+}
+.panel-c__button{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Lato";
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.panel-c2__link{
+    display: flex;
+    flex-direction: column;
+}
+.panel-c3 {
+    display: flex;
+    flex-direction: column; 
+}
+.panel-c2__link{
+    display: flex;
+    flex-direction: column;
+}
+
+.panels-wrapper {
+    display: flex;
+    
+}
+
+.panel-c1,
+.panel-c2,
+.panel-c3 {
+    margin-right: 45px;
+}
+
+.panel__copyright{
+    font-family: "Din-Pro";
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 35px;
+    padding: 0 35px 0 75px;
+    font-size: 12px;
+}
+
+
+.panel-1-1{
+    display: none;
 }
 /* Tablet and mobile */
 /* @media only screen and (max-width: 63.9375em) {
@@ -404,12 +472,7 @@ footer{
     }
   
 } */
-@media only screen and (max-width: 102.5000em) {
-    #content{
-        flex-direction: column;
-    }
-  
-}
+
 
 /* Mobile: with < 740px */
 @media only screen and (max-width: 74.0000em) {
@@ -419,10 +482,37 @@ footer{
     #background a span{
         display: none;
     }
-    
+    .panel-c3{
+        display: none;
+    }
+    .panel-2{
+        padding: 40px 60px 60px;
+       
+    }
+    .panel-c1,
+    .panel-c2{
+        margin-right: 0;
+    }
+    .panels-wrapper{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .panel__brand{
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+    .panel__copyright{
+        padding: 0;
+        
+    }
 }
 /* Tablet: with >= 740px and with < 1024px */
 @media only screen and (max-width: 102.5000em) {
+    #content{
+        flex-direction: column;
+    }
     #content .about{
         width: 100%;
         padding-right: 0px;
@@ -435,13 +525,44 @@ footer{
         width: 100%;
        
     }
-
+    .panel{
+        flex-direction: column;
+    }
     .panel-1{
         display: none;
+        width: 100%;
     }
+    .panel-1-1{
+        display: block;
+        padding: 50px;
+        text-align: center;
+        width: 100%;
+        background-color: #292929;
+    }
+    .panel1-1__legal{
+        font-family: "DIN Pro", sans-serif;
+        font-size: 12px;
+        padding: 5px 0;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+    .panel1-1__button{
+        letter-spacing: 0.5px;
+        font-size: 18px;
+        font-family: "Lato";
+        font-weight: bold;
+        margin: 5px 0;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+    .panel
     .panel-2{
         width: 100%;
     }
+    
+    
     /* #nav, .subnav{
         display: none;
     }
