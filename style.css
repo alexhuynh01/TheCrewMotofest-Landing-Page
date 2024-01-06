@@ -65,7 +65,6 @@ html {
     background-color: white;
 }
 
-
 #nav > li > a {
     color: white;
     text-transform: uppercase;
@@ -343,7 +342,7 @@ footer{
 .panel-1{
 
     width: 20%;
-
+    max-width: 400px;
     background-color: #292929;
     padding: 40px 20px 40px 40px;
    
@@ -418,6 +417,7 @@ footer{
     #background a span{
         display: none;
     }
+    
 }
 /* Tablet: with >= 740px and with < 1024px */
 @media only screen and (max-width: 102.5000em) {
@@ -427,7 +427,13 @@ footer{
     }
     #content .video-content{
         width: 100%;
-
+        padding: 0 30px;
+    }
+    .panel-1{
+        display: none;
+    }
+    .panel-2{
+        width: 100%;
     }
     /* #nav, .subnav{
         display: none;
