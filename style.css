@@ -2,6 +2,8 @@
 
 @import url(https://db.onlinewebfonts.com/c/15a478cc0eb1d84f4077a2a9d28df0b2?family=DIN+Pro);
 
+@import url(https://db.onlinewebfonts.com/c/15a478cc0eb1d84f4077a2a9d28df0b2?family=DIN+Pro);
+
 @font-face {
     font-family: 'DIN-CondItalic';
     src: url(assets/font/DIN-CondItalic.otf) format('opentype');
@@ -30,6 +32,13 @@ ol, ul {
 html {
     font-family: "DINCond-Black";
 }
+
+
+.mb-25{
+    margin-bottom: 25px !important ;
+}
+
+
 #header {
     --height-menu: 75px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -44,11 +53,14 @@ html {
     letter-spacing: -0.45px;
     z-index: 1;
 }
-
-#logo img {
-    max-height: 70px;
+#logo {
+    
     margin-right: 15px;
     margin-left: 20px;
+}
+#logo img {
+    max-height: 70px;
+    display: block;
 }
 /* nav */
 #nav li{
@@ -62,7 +74,6 @@ html {
     color: #292929;
     background-color: white;
 }
-
 
 #nav > li > a {
     color: white;
@@ -182,7 +193,7 @@ html {
     font-size: 50px;
     letter-spacing: -1.25;
     font-style: italic;
-    line-height: 50px;
+
     font-weight : 500;
 }
 #background a span{
@@ -226,7 +237,6 @@ html {
 
 #content{
     display: flex;
-    
     /* background-color: white; */
     width: 95%;
     background-size: 100%, contain ;
@@ -235,7 +245,7 @@ html {
 }
 #content .video-content{
     width: 50%;   
-    margin: 100px 0;
+    margin: 170px 0;
 }
 
 #content .video-content #myVideo{
@@ -244,8 +254,7 @@ html {
     box-shadow:  0px 9px 18px 0px;
     color: #ff1c38;
     border: 8px solid;
-    
-    width: 100%;
+    width: 95%;
     max-height: 100%;
 }
 #content .video-content h3{
@@ -255,8 +264,9 @@ html {
 }
 #content .about{
     color: #292929;
-    padding: 100px 0px;
+    margin-top: 110px;
     width: 50%;
+    /* padding-right: 190px; */
 }
 
 #content .about h2 {
@@ -302,7 +312,7 @@ html {
 }
 #content #on-click {
     text-align: center;
-    
+
 }
 
 #content #on-click span:hover a{
@@ -315,11 +325,176 @@ html {
     line-height: 32px;
     
 }
-#footer{
-    height: 100vh;
-    background-color: #292929;
+footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
 }
 
+.promo__wrapper{
+    padding: 0 70px;
+    height: 63px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.promo__content{
+    font-family: "DIN Pro", sans-serif;
+    color: #888787;
+    font-size: 14px;
+}
+.promo__media{
+
+}
+
+.panel-1{
+
+    width: 20%;
+    max-width: 400px;
+    background-color: rgb(29, 30, 33);
+    padding: 40px 20px 40px 40px;
+    min-width: 310px;
+}
+
+.panel__link{
+    display: flex;
+    flex-direction: column;
+   
+    margin-top: 30px;
+}
+.panel__button{
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-family: "Lato";
+    font-weight: bold;
+    margin: 5px 0;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.panel__legal{
+    font-family: "DIN Pro", sans-serif;
+    font-size: 16px;
+    padding: 2px 0;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.panel-2{
+   width: 80%;
+   background-color: rgb(16, 17, 20);
+   padding: 40px 50px 0px 60px;
+   display: flex;
+   flex-direction: column;
+}
+.panel__brand{
+    margin: 0 0 30px;
+}
+.panel__brand img{
+   
+    width: 180px;
+    height: 50px;
+}
+.panel-c1{
+
+}
+.panel-c1__logo{
+    font-family: "DIN Pro", sans-serif;
+    margin: 10px 0 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.panel-c1__link{
+    display: flex;
+    flex-direction: column;
+   
+}
+.panel-c__button{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Lato";
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.panel-c2__link{
+    display: flex;
+    flex-direction: column;
+}
+.panel-c3 {
+    display: flex;
+    flex-direction: column; 
+}
+.panel-c2__link{
+    display: flex;
+    flex-direction: column;
+}
+
+.panels-wrapper {
+    display: flex;
+    
+}
+
+/* .panel__button,
+.panel__legal,
+.panel-c__button
+ {
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+} */
+.panel__button:hover,
+.panel__legal:hover,
+.panel-c__button:hover {
+    opacity: 1;
+}
+.panel__link:hover .panel__button:not(:hover),
+.panel__link:hover .panel__legal:not(:hover),
+.panel__link:hover .panel1-1__button:not(:hover),
+.panel__link:hover .panel1-1__legal:not(:hover),
+.panel-c1:hover .panel-c__button:not(:hover),
+.panel-c2:hover .panel-c__button:not(:hover) {
+    opacity: 0.3; 
+}
+
+.panel-c1,
+.panel-c2,
+.panel-c3 {
+    margin-right: 45px;
+}
+
+.panel__copyright{
+    font-family: "Din-Pro";
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 35px;
+    padding: 0 50px 0 50px;
+    width: 70%;
+    font-size: 12px;
+}
+.panel-wrapper-copyright{
+    display: flex;
+    width: 100%;
+    opacity: 0.7;
+}
+.panel__rating{
+    margin-left: 160px;
+    position: relative;
+    bottom: 10px
+
+}
+
+.panel-1-1{
+    display: none;
+}
+.panel__rating1-1{
+    display: none;
+}
 /* Tablet and mobile */
 /* @media only screen and (max-width: 63.9375em) {
     #content{
@@ -327,38 +502,114 @@ html {
     }
   
 } */
-@media only screen and (max-width: 1640px) {
-    #content{
-        flex-direction: column;
-    }
-  
-}
+
 
 /* Mobile: with < 740px */
-/* @media only screen and (max-width: 46.1875em) {
-    #content .about{
-        width: 100%;
-        
-    }
-    #content .video-content{
-        width: 100%;
-
-    }
-} */
-/* Tablet: with >= 740px and with < 1024px */
-@media only screen and (max-width: 1640px) {
-    #content .about{
-        width: 100%;
-        
-    }
-    #content .video-content{
-        width: 100%;
-
-    }
+@media only screen and (max-width: 74.0000em) {
     #nav, .subnav{
         display: none;
     }
     #background a span{
         display: none;
     }
+    .panel-c3{
+        display: none;
+    }
+    .panel-2{
+        padding: 40px 60px 60px;
+       
+    }
+    .panel-c1,
+    .panel-c2{
+        margin-right: 0;
+    }
+    .panels-wrapper{
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .panel__brand{
+        margin: 0 auto;
+        margin-bottom: 45px;
+    }
+    .panel__copyright{
+        padding: 0;
+        width: 100%;
+    }
+    .panel__rating1-1{
+        display: block;
+        margin: 0 auto;
+    }
+    .panel__rating{
+        display: none;
+        
+    }
+    .panel-wrapper-copyright{
+        justify-content: center;
+    }
+}
+/* Tablet: with >= 740px and with < 1024px */
+@media only screen and (max-width: 102.5000em) {
+    #content{
+        flex-direction: column;
+    }
+    #content .about{
+        width: 100%;
+        padding-right: 0px;
+    }
+    #content .video-content{
+        width: 100%;
+        padding: 0 30px 
+    }
+    #content .video-content #myVideo{
+        width: 100%;
+       
+    }
+    .panel{
+        flex-direction: column;
+    }
+    .panel-1{
+        display: none;
+        width: 100%;
+    }
+    .panel-1-1{
+        display: block;
+        padding: 50px;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(29, 30, 33);
+    }
+    .panel1-1__legal{
+        font-family: "DIN Pro", sans-serif;
+        font-size: 12px;
+        padding: 5px 0;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+    .panel1-1__button{
+        letter-spacing: 0.5px;
+        font-size: 18px;
+        font-family: "Lato";
+        font-weight: bold;
+        margin: 5px 0;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+    }
+   
+    
+    .panel
+    .panel-2{
+        width: 100%;
+    }
+    
+    
+    /* #nav, .subnav{
+        display: none;
+    }
+    #background a span{
+        display: none;
+    } */
 }
