@@ -453,8 +453,10 @@ footer{
 .panel-c__button:hover {
     opacity: 1;
 }
-.panel-1:hover .panel__button:not(:hover),
-.panel-1:hover .panel__legal:not(:hover),
+.panel__link:hover .panel__button:not(:hover),
+.panel__link:hover .panel__legal:not(:hover),
+.panel__link:hover .panel1-1__button:not(:hover),
+.panel__link:hover .panel1-1__legal:not(:hover),
 .panel-c1:hover .panel-c__button:not(:hover),
 .panel-c2:hover .panel-c__button:not(:hover) {
     opacity: 0.3; 
@@ -478,6 +480,7 @@ footer{
 .panel-wrapper-copyright{
     display: flex;
     width: 100%;
+    opacity: 0.7;
 }
 .panel__rating{
     margin-left: 160px;
