@@ -312,7 +312,7 @@ html {
 }
 #content #on-click {
     text-align: center;
-    
+
 }
 
 #content #on-click span:hover a{
@@ -332,15 +332,15 @@ footer{
 }
 
 .promo__wrapper{
-    padding: 0 100px;
-    height: 75px;
+    padding: 0 70px;
+    height: 63px;
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .promo__content{
-    font-family: "DIN Pro";
+    font-family: "DIN Pro", sans-serif;
     color: #888787;
     font-size: 14px;
 }
@@ -381,13 +381,7 @@ footer{
     color: white;
     text-transform: uppercase;
 }
-.panel__legal:hover,
-.panel__button:hover{
-    color: #ffb52d;
-}
-/* .panel__link:hover {
-    background-color: gainsboro;
-} */
+
 
 .panel-2{
    width: 80%;
@@ -408,10 +402,11 @@ footer{
 
 }
 .panel-c1__logo{
-    font-family: "DIN Pro";
+    font-family: "DIN Pro", sans-serif;
     margin: 10px 0 20px;
     color: white;
     text-transform: uppercase;
+    font-size: 12px;
 }
 .panel-c1__link{
     display: flex;
@@ -444,6 +439,25 @@ footer{
 .panels-wrapper {
     display: flex;
     
+}
+
+.panel__button,
+.panel__legal,
+.panel-c__button
+ {
+    opacity: 1;
+    transition: opacity 0.3s ease; 
+}
+.panel__button:hover,
+.panel__legal:hover,
+.panel-c__button:hover {
+    opacity: 1;
+}
+.panel-1:hover .panel__button:not(:hover),
+.panel-1:hover .panel__legal:not(:hover),
+.panel-c1:hover .panel-c__button:not(:hover),
+.panel-c2:hover .panel-c__button:not(:hover) {
+    opacity: 0.3; 
 }
 
 .panel-c1,
