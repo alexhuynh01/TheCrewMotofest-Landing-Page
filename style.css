@@ -264,7 +264,7 @@ html {
 }
 #content .about{
     color: #292929;
-    margin-top: 170px;
+    margin-top: 110px;
     width: 50%;
     /* padding-right: 190px; */
 }
@@ -352,9 +352,9 @@ footer{
 
     width: 20%;
     max-width: 400px;
-    background-color: #292929;
+    background-color: rgb(29, 30, 33);
     padding: 40px 20px 40px 40px;
-   min-width: 310px;
+    min-width: 310px;
 }
 
 .panel__link{
@@ -368,7 +368,7 @@ footer{
     font-size: 18px;
     font-family: "Lato";
     font-weight: bold;
-    margin: 10px 0;
+    margin: 5px 0;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -392,12 +392,12 @@ footer{
 .panel-2{
    width: 80%;
    background-color: rgb(16, 17, 20);
-   padding: 40px 350px 0px 60px;
+   padding: 40px 50px 0px 60px;
    display: flex;
    flex-direction: column;
 }
 .panel__brand{
-    margin: 0 0 40px;
+    margin: 0 0 30px;
 }
 .panel__brand img{
    
@@ -457,12 +457,25 @@ footer{
     text-align: center;
     color: #ffffff;
     margin-bottom: 35px;
-    padding: 0 35px 0 75px;
+    padding: 0 50px 0 50px;
+    width: 70%;
     font-size: 12px;
 }
+.panel-wrapper-copyright{
+    display: flex;
+    width: 100%;
+}
+.panel__rating{
+    margin-left: 160px;
+    position: relative;
+    bottom: 10px
 
+}
 
 .panel-1-1{
+    display: none;
+}
+.panel__rating1-1{
     display: none;
 }
 /* Tablet and mobile */
@@ -505,7 +518,18 @@ footer{
     }
     .panel__copyright{
         padding: 0;
+        width: 100%;
+    }
+    .panel__rating1-1{
+        display: block;
+        margin: 0 auto;
+    }
+    .panel__rating{
+        display: none;
         
+    }
+    .panel-wrapper-copyright{
+        justify-content: center;
     }
 }
 /* Tablet: with >= 740px and with < 1024px */
@@ -537,7 +561,7 @@ footer{
         padding: 50px;
         text-align: center;
         width: 100%;
-        background-color: #292929;
+        background-color: rgb(29, 30, 33);
     }
     .panel1-1__legal{
         font-family: "DIN Pro", sans-serif;
@@ -557,6 +581,8 @@ footer{
         color: white;
         text-transform: uppercase;
     }
+   
+    
     .panel
     .panel-2{
         width: 100%;
