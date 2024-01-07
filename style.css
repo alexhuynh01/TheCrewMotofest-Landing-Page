@@ -37,7 +37,9 @@ html {
 .mb-25{
     margin-bottom: 25px !important ;
 }
-
+.mt-25{
+    margin-top: 25px !important;
+}
 
 #header {
     --height-menu: 75px;
@@ -441,13 +443,13 @@ footer{
     
 }
 
-/* .panel__button,
+.panel__button,
 .panel__legal,
 .panel-c__button
  {
     opacity: 1;
     transition: opacity 0.3s ease; 
-} */
+}
 .panel__button:hover,
 .panel__legal:hover,
 .panel-c__button:hover {
@@ -457,8 +459,8 @@ footer{
 .panel__link:hover .panel__legal:not(:hover),
 .panel__link:hover .panel1-1__button:not(:hover),
 .panel__link:hover .panel1-1__legal:not(:hover),
-.panel-c1:hover .panel-c__button:not(:hover),
-.panel-c2:hover .panel-c__button:not(:hover) {
+.panel-c1__link:hover .panel-c__button:not(:hover),
+.panel-c2__link:hover .panel-c__button:not(:hover) {
     opacity: 0.3; 
 }
 
@@ -486,7 +488,7 @@ footer{
     margin-left: 160px;
     position: relative;
     bottom: 10px
-
+    
 }
 
 .panel-1-1{
