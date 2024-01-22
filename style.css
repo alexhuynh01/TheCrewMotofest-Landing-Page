@@ -488,6 +488,9 @@ footer {
 .panel-wrapper-copyright {
   display: flex;
   width: 100%;
+  
+}
+.panel-wrapper-copyright p{
   opacity: 0.7;
 }
 .panel__rating {
