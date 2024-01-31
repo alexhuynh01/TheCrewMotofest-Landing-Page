@@ -188,6 +188,7 @@ html {
   width: 100%;
   height: 100%;
   z-index: -1;
+
 }
 #background img {
   width: 30%;
@@ -506,6 +507,12 @@ footer {
 .panel__rating1-1 {
   display: none;
 }
+.top-menu{
+  padding-left: 30px;
+  color: white;
+  display: none;
+}
+
 /* Tablet and mobile */
 /* @media only screen and (max-width: 63.9375em) {
     #content{
@@ -556,6 +563,14 @@ footer {
   }
   .panel-wrapper-copyright {
     justify-content: center;
+  }
+  .top-menu{
+    cursor: pointer;
+    display: block;
+  }
+  #logo img {
+    max-height: 45px;
+    display: block;
   }
 }
 /* Tablet: with >= 740px and with < 1024px */
